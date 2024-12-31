@@ -15,5 +15,16 @@ namespace HcmShop.InventoryManagement.Domain.General
         {
             return $"{ItemPrice} {Currency}";
         }
+
+        public Price(double price, Currency currency)
+        {
+            ItemPrice = price ;
+            Currency = currency ;
+        }
+
+        public Price()
+        {
+        }
     }
+
 }

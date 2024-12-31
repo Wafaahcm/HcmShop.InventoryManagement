@@ -117,7 +117,7 @@ namespace HcmShop.InventoryManagement.Domain.ProductManagement
                 Log($"{CreateSimpleProductRepresentation} stock overflow. {newStock - AmountInStock} item(s) ordere that couldn't be stored.");
             }
 
-            if (AmountInStock > 10)
+            if (AmountInStock > StockTreshold)
             {
                 IsBelowStockThreshold = false;
             }
